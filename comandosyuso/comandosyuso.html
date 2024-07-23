@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PMA_Lab3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+          body {
+                background-image: url('../assets/img/gitBackground.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+          }
+          .container {
+            color: white;
+            text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Comandos GIT y uso de GitBash</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Comandos GIT y uso de GitBash</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../queesgit/queesgit.html">¿Que es un git?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../github/github.html">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Comandos GIT y uso de GitBash</a>
+                      </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <section class = "container position-relative mt-5">
+            <h3>Informacion sobre los comando de git y el uso de GitBash</h3>
+          </section>
+
+          <section class = "container position-relative mt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Comandos de Git
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>pwd: </strong> Sirve para poder ubicar en qué directorio me encuentro
+                      <br>
+                      <strong>cd: </strong> Sirve para situarse en un directorio
+                      <br>
+                      <strong>cd ..: </strong> Subir un nivel de directorio
+                      <br>
+                      <strong>is: </strong> Muestra en forma de lista todo lo que se encuentra dentro del directorio donde nos
+                      encontramos.
+                      <br>
+                      <strong>clear: </strong> Sirve para borrar la pantalla
+                      <br>
+                      <strong>mkdir: </strong> Sirve para poder crear directorios
+                      <br>
+                      <strong>touch: </strong> Sirve para poder crear ficheros de archivos
+                      <br>
+                      <strong>exit: </strong> Sale de la sesion git
+                      <br>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Uso de GitBash
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>git init: </strong> • Todo lo que se escriba dentro de la carpeta se encontrará dentro de git.
+                      <br>
+                      • Acá se guarda el historial de versiones y se encuentra oculto dentro de la carpeta\
+                      <br>
+                      • Instrucción que se ejecuta solo una vez
+                      <br>
+                      <strong>git add: </strong> • Lleva el control de archivos que se agregan.
+                      <br>
+                      <strong>cd ..: </strong> • Subir un nivel de directorio
+                      <br>
+                      <strong>git commit: </strong> • Comando que indica que esta lista alguna funcionalidad para ser una versión de
+                      código.
+                      <br>
+                      <strong>git commit –m “Comentario”: </strong> • Archivos enviados al repositorio añadiendo los comentarios de los cambios
+                      <br>
+                      <strong>git remote add origin "URL": </strong> • Especifica el origen de nuestro repositorio. La URL se obtiene del repositorio de
+                      GitHub.
+                      <br>
+                      • Ejemplo:
+                       git remote add origin https://github.com/pedroarmas24/hola-mundo.git
+                      <br>
+                      <strong>git status: </strong> • Permite ver lo que tenemos en el archivo, este sirve para ver si hay cambios o no por
+                      subir al repositorio (si es necesario crear un commit o no)
+                      <br>
+                      <strong>git commit –am “Comentario descriptivo”: </strong> • Sirve para enviar archivos al repositorio, es decir, los cambios realizados
+                      <br>
+                      <strong>git push: </strong> • Envía la rama especificada a una "remote", junto con todos los commits y objetos
+                        internos necesarios. De este modo se crea una rama local en el repositorio de
+                        destino
+                      <br>
+                      <strong>git push origin master: </strong>• Es el nombre que se le coloca al repositorio remoto al que se conecta
+                      <br>
+                      <strong>git pull: </strong> • Se emplea para extraer y descargar contenido desde un repositorio remoto y
+                      actualizar al instante el repositorio local para reflejar el contenido.
+                      <br>
+                      <strong>Branch: </strong> • Es una rama diferente a la rama master y se utiliza de forma colaborativa. Con ella
+                      podremos asignar tareas y ordenar de mejor manera nuestro proyecto.
+                      
+                      <br>
+                      <strong>Merge: </strong>• Es una fusión de ramas
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
